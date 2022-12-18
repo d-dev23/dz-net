@@ -86,3 +86,4 @@ root@zabbix:/opt# cat 2.log
     ERROR on  8.8.8.8 status=28
 root@zabbix:/opt#
 
+
