@@ -2,13 +2,16 @@
 1) Установил и зарегал АК. Пароли сохранил
 
 
-![Текстовое описание изображения](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B83_page-0001.jpg)
+![скрин виджета](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B83_page-0001.jpg)
 
 
-2) Запрос кодов через google authenticator настроил. 
+2) Запрос кодов через google authenticator настроил.
+
+![скрин с телефона](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B834.pdf)
+
 3) Самописный сертификат на сайт добавил 
 
-
+![скрин с телефона](
 
 
 4) Решено
