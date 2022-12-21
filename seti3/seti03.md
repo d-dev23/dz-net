@@ -19,7 +19,6 @@
 9) Проброс на 443 и 80 сделал 
 ![](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82-1.jpg)
 22 порт так же открыл 
-![](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82-1.jpg)
 ![](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5-1.jpg)
 Прилагаю скрины открытых портов.
 
