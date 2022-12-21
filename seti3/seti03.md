@@ -4,7 +4,7 @@
 2) Запрос кодов через google authenticator настроил.
 ![скрин с телефона](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B834-1.jpg)
 3) Самописный сертификат на сайт добавил 
-![сертификат](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82-1.jpg)
+![сертификат](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B831-1.jpg)
 4) Решено
 ![сайт](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%B5%D1%82%D0%B832-1.jpg)
 5) Ключ сгенерил, а так же запретил доступ по логину и паролю
