@@ -51,7 +51,19 @@
 *Приложить вывод команд установленных версий каждой из программ, оформленный в markdown.*
 
 *PS C:\Users\dimah> vagrant -v
-Vagrant 2.3.3
+Vagrant 2.3.3*
+
+*PS C:\Program Files\Oracle\VirtualBox> .\vboxmanage -v
+6.1.40r154048*
+
+*root@ansible:/home/d# ansible --version
+ansible 2.9.6
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Nov 14 2022, 12:59:47) [GCC 9.4.0]
+*
 
 ## Задача 4 (*)
 
