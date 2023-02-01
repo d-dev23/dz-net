@@ -45,6 +45,7 @@ Hey, Netology
 Опубликуйте созданный форк в своем репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/repository/docker/dimah3467/dev/general
 
 Собственно конфиг Dockerfile 
+
 root@di:/home/d/docker# cat Dockerfile
 FROM nginx
 RUN apt -y update && apt -y upgrade && apt -y clean
