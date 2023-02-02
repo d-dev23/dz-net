@@ -68,13 +68,35 @@ RUN echo '<html><head>Hey, Netology</head><body><h1>I am DevOps Engineer!</h1></
 Сценарий:
 
 - Высоконагруженное монолитное java веб-приложение;
+
+Ответ: Виртуалка + кластер. Тк приложение будет состоять из бд, балансировщика и тд. и нужны доп сервисы для функционирования.
 - Nodejs веб-приложение;
+
+Ответ: Хватит и докера
+
 - Мобильное приложение c версиями для Android и iOS;
+
+Ответ: Виртуалка + кластер. Тк приложение будет состоять из бд, балансировщика и тд. и нужны доп сервисы для функционирования + эмуляция андроида.
+
 - Шина данных на базе Apache Kafka;
+
+Ответ: Необходимо использовать виртуалку.
+
 - Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana;
+
+Ответ: Использовать гипервизор
+
 - Мониторинг-стек на базе Prometheus и Grafana;
+
+Ответ: Можно использовать докер
+
 - MongoDB, как основное хранилище данных для java-приложения;
+
+Ответ: В виртуалке, тк обслуживать бд будет удобнее.
+
 - Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry.
+
+Ответ: Использую виртуальные машины для разграничения сервисов
 
 ## Задача 3
 
@@ -83,6 +105,30 @@ RUN echo '<html><head>Hey, Netology</head><body><h1>I am DevOps Engineer!</h1></
 - Подключитесь к первому контейнеру с помощью ```docker exec``` и создайте текстовый файл любого содержания в ```/data```;
 - Добавьте еще один файл в папку ```/data``` на хостовой машине;
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
+
+root@di:/home/d/data2# docker volume ls
+DRIVER    VOLUME NAME
+local     637f8dce524dc57c97c2de4d9fdd169c51a6f427c40c9bdb3bf9df7b69179244
+local     a2ac7f151cdd8afddf2f5bbf26f190240b18705067ee1d2c4fcb6f7feea82a3a
+local     data1
+root@di:/home/d/data2# docker run -v data1:/data2 centos
+root@di:/home/d/data2# docker run -v data1:/data2 -it centos
+[root@44a22447399b /]# cd /data2/
+[root@44a22447399b data2]# touch test-file.txt
+[root@44a22447399b data2]# ls
+test-file.txt
+[root@44a22447399b data2]# exit
+exit
+root@di:/home/d/data2# docker run -v data1:/data2 -it debian
+Unable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+bbeef03cda1f: Pull complete
+Digest: sha256:534da5794e770279c889daa891f46f5a530b0c5de8bfbc5e40394a0164d9fa87
+Status: Downloaded newer image for debian:latest
+root@e5949a2fba80:/# cd data2/
+root@e5949a2fba80:/data2# ls
+test-file.txt
+
 
 ## Задача 4 (*)
 
