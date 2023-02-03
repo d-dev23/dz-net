@@ -158,6 +158,25 @@ test-file.txt
 Соберите Docker образ с Ansible, загрузите на Docker Hub и пришлите ссылку вместе с остальными ответами к задачам.
 
 
+В принципе можно черезз dockerfile создать данный образ.
+
+Сам репозиторий https://hub.docker.com/repository/docker/dimah3467/a2/general
+
+root@di:/home/d/absible# cat Dockerfile
+FROM ubuntu:22.10
+RUN apt update && apt dist-upgrade -y
+RUN apt install software-properties-common -y
+RUN add-apt-repository ppa:ansible/ansible
+RUN apt update
+RUN apt-get install ansible -y
+
+
+Ну или можно сделать проще и поставить готовый образ
+
+root@di:/home/d/absible# docker search ansible
+
+
+
 ---
 
 ### Как cдавать задание
