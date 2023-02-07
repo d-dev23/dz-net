@@ -52,9 +52,9 @@ FROM nginx
 RUN apt -y update && apt -y upgrade && apt -y clean
 RUN echo '<html><head>Hey, Netology</head><body><h1>I am DevOps Engineer!</h1></body></html>' > /usr/share/nginx/html/index.html
 
-
-![](https://github.com/d-dev23/dz-net/blob/main/Снимок%20экрана%202023-01-31%20165743.png)
 ```
+![](https://github.com/d-dev23/dz-net/blob/main/Снимок%20экрана%202023-01-31%20165743.png)
+
 
 
 ## Задача 2
