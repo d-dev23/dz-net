@@ -85,7 +85,7 @@ internal_ip_address_vm_3 = "192.168.10.23"
 
 Ответ:
 
-![grafana]([https://github.com/d-dev23/dz-net/blob/main/grafana.png](https://github.com/d-dev23/dz-net/blob/main/grafana.png))
+![/](https://github.com/d-dev23/dz-net/blob/main/grafana.png)
 
 ## Задача 5 (*)
 
