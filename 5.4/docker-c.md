@@ -58,7 +58,7 @@ Outputs:
 external_ip_address_vm_3 = "51.250.22.32"
 internal_ip_address_vm_3 = "192.168.10.23"
 ```
-[!](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0.png)
+![os](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0.png)
 
 ## Задача 3
 
@@ -69,7 +69,7 @@ internal_ip_address_vm_3 = "192.168.10.23"
 
 Ответ:
 
-[!](https://github.com/d-dev23/dz-net/blob/main/docker-c.png)
+![docker](https://github.com/d-dev23/dz-net/blob/main/docker-c.png)
 ## Задача 4
 
 1. Откройте веб-браузер, зайдите на страницу http://<внешний_ip_адрес_вашей_ВМ>:3000.
@@ -85,7 +85,7 @@ internal_ip_address_vm_3 = "192.168.10.23"
 
 Ответ:
 
-[!](https://github.com/d-dev23/dz-net/blob/main/%D0%93%D1%80%D0%B0%D1%84%D0%B0%D0%BD%D0%B0.png)
+![графана](https://github.com/d-dev23/dz-net/blob/main/%D0%93%D1%80%D0%B0%D1%84%D0%B0%D0%BD%D0%B0.png)
 
 ## Задача 5 (*)
 
