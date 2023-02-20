@@ -38,6 +38,28 @@
 
 Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
 
+Ответ: Собственно, если надо могу полностью выгрузить резуьтат terraforn plane
+
+```
+yandex_vpc_network.network-1: Creating...
+yandex_vpc_network.network-1: Creation complete after 2s [id=enpms3k13nv4bb7qi78                                                                                              g]
+yandex_vpc_subnet.subnet-1: Creating...
+yandex_vpc_subnet.subnet-1: Creation complete after 0s [id=e2l6km6ppr1f2jb59k8g]
+yandex_compute_instance.vm-3: Creating...
+yandex_compute_instance.vm-3: Still creating... [10s elapsed]
+yandex_compute_instance.vm-3: Still creating... [20s elapsed]
+yandex_compute_instance.vm-3: Still creating... [30s elapsed]
+yandex_compute_instance.vm-3: Creation complete after 35s [id=epdr3jue8pfpn7gmma                                                                                              m3]
+
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+external_ip_address_vm_3 = "51.250.22.32"
+internal_ip_address_vm_3 = "192.168.10.23"
+```
+[!](https://github.com/d-dev23/dz-net/blob/main/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%20%D0%B8%D0%B7%20%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0.png)
+
 ## Задача 3
 
 С помощью ansible и docker-compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana .
@@ -45,6 +67,9 @@
 
 Для получения зачета вам необходимо предоставить вывод команды "docker ps" , все контейнеры, описанные в ([docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml)),  должны быть в статусе "Up".
 
+Ответ:
+
+[!](https://github.com/d-dev23/dz-net/blob/main/docker-c.png)
 ## Задача 4
 
 1. Откройте веб-браузер, зайдите на страницу http://<внешний_ip_адрес_вашей_ВМ>:3000.
@@ -57,6 +82,10 @@
 <p align="center">
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
+
+Ответ:
+
+[!](https://github.com/d-dev23/dz-net/blob/main/%D0%93%D1%80%D0%B0%D1%84%D0%B0%D0%BD%D0%B0.png)
 
 ## Задача 5 (*)
 
