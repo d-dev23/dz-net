@@ -64,6 +64,82 @@ root@mail:/home/d/data2# cat .gitignore
 ```
 Ответ на вопрос 4 
 ```
+небыло имени в строке 24, так же удалил лишнее в строке 31. 
+
+
+root@mail:/home/d/data2# cat main.tf
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0.1"
+    }
+  }
+  required_version = ">=0.13" /*Многострочный комментарий.
+ Требуемая версия terraform */
+}
+provider "docker" {}
+
+#однострочный комментарий
+
+resource "random_password" "random_string" {
+  length      = 16
+  special     = false
+  min_upper   = 1
+  min_lower   = 1
+  min_numeric = 1
+}
+
+
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 8000
+  }
+}
+
+```
+
+Ответ на 5 вопрос
+
+```
+root@mail:/home/d/data2# docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS                  NAMES
+878f22d1498b   a99a39d070bf   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp   eWyPqf1VVj1sy4Ym
+```
+Ответ на 6 вопрос
+
+```
+Грубого говоря при использовании -auto-approve, конфиг применяется сразу и без подтверждения.
+root@mail:/home/d/data2# docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+2d796f80de0b   a99a39d070bf   "/docker-entrypoint.…"   34 seconds ago   Up 32 seconds   0.0.0.0:8000->80/tcp   hello_workd
+```
+Ответ на 7 вопрос
+
+```
+
+{
+  "version": 4,
+  "terraform_version": "1.4.6",
+  "serial": 22,
+  "lineage": "37ca9208-4894-794f-0768-8ab730d0e552",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+
+```
+Ответ на 8 вопрос.**После изменения имени контейнера в файле main.tf мы по сути потеряли над ним управление, тк его нет в конфигурционном файле.**
+
 
 ------
 
