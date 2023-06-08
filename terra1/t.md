@@ -53,13 +53,12 @@ root@mail:/home/d/data2# cat .gitignore
 ```
 Ответ на 2 вопрос
 ```
-# .tfstate files
-*.tfstate
-*.tfstate.*
+personal.auto.tfvars - конфиг с значением переменных, часто является секретным, нужно с осторожностью пушить в публичные репозитарии.
+
+Ответ на вопрос из проверки ДЗ: это файл с расширением .tfstate , который хранит описание развернутой инфраструктуры.
 ```
 Ответ на 3 вопрос
 ```
-"bcrypt_hash": "$2a$10$cz83wM44SPaUgBg4wd3FVOSGgl9AO4byKj5YCPxq5ueEib33WJOCC",
 "result": "vQPZv74Z0eral49m",
 ```
 Ответ на вопрос 4 
@@ -118,7 +117,7 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED              STAT
 Ответ на 6 вопрос
 
 ```
-Грубого говоря при использовании -auto-approve, конфиг применяется сразу и без подтверждения.
+Грубого говоря при использовании -auto-approve, конфиг применяется сразу и без подтверждения. ***По сути используя -auto-approve мы лишаем себя лишней визуальной проверки через plane (человеческий фактор рискует похерить все) ***
 root@mail:/home/d/data2# docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
 2d796f80de0b   a99a39d070bf   "/docker-entrypoint.…"   34 seconds ago   Up 32 seconds   0.0.0.0:8000->80/tcp   hello_workd
